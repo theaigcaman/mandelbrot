@@ -12,7 +12,8 @@ int bitmap::addHeader() //header
 	unsigned int bmpSize, dataSize;
 	dataSize = (width * height)*3 + ((width *3)%4)*height;
 	bmpSize = dataSize + 54;
-	if (bmpSize > 4294967295) //4294967295 = max number representable by 32 bits (i.e. the number of bits allowed for in the header)
+	unsigned long long int bmpSizeTest = (width * height)*3 + 54; //neither ints nor long ints hold numbers bigger than 4294967295, therefore long long int
+	if (bmpSizeTest > 4294967295) //4294967295 = max number representable by 32 bits (i.e. the number of bits allowed for in the header)
 	{
 		std::cout << "Image too large, reduce size"; //complain if the user is absurd and wants a 4gb image, go use JPG or something you fool
 		return -1;
