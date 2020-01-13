@@ -1,4 +1,4 @@
-#include "bitmap.h"
+#include "bitmap.hpp"
 
 
 bitmap::bitmap(int width, int height, std::string name) : width(width), height(height)  //construct and initailize
