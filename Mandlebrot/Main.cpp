@@ -1,6 +1,6 @@
-#include "bitmap.h"
-#include "color.h"
-#include "mandlebrot.h"
+#include "bitmap.hpp"
+#include "color.hpp"
+#include "mandlebrot.hpp"
 #include <complex>
 #include <random>
 #include <chrono>
