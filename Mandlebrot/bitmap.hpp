@@ -6,7 +6,7 @@
 #include <iostream>
 #include <array>
 #include <cmath>
-#include "color.h"
+#include "color.hpp"
 class bitmap
 {
 private:
