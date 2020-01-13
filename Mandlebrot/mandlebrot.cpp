@@ -1,4 +1,4 @@
-#include "mandlebrot.h"
+#include "mandlebrot.hpp"
 
 
 
