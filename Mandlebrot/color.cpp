@@ -1,4 +1,4 @@
-#include "color.h"
+#include "color.hpp"
 //all of the code in this file was taken from stack overflow: https://stackoverflow.com/questions/3018313/algorithm-to-convert-rgb-to-hsv-and-hsv-to-rgb-in-range-0-255-for-both
 //this code converts a color described in HSV to a color described in RGB and was slightly modified by me to make it fit with my program
 color color::hsv2rgb(hsv in)
